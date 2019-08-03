@@ -6,7 +6,10 @@ const App: React.FC = () => {
     <div className="main-container">
       <header className="header">
         <h1>Notes</h1>
-        <p>Search</p>
+        <input 
+          className="searchBar"
+          type="text"
+          value="Search"/>
       </header>
       <div className="buttons">
         <h2>All</h2>

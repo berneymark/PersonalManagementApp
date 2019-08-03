@@ -3,13 +3,19 @@ import './App.css';
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="main-container">
+      <header className="header">
         <h1>Notes</h1>
+        <p>Search</p>
+      </header>
+      <div className="buttons">
         <h2>All</h2>
         <h2>Pinned</h2>
         <h2>Collections</h2>
-      </header>
+      </div>
+      <div className="notes">
+
+      </div>
     </div>
   );
 }

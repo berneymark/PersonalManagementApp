@@ -8,17 +8,17 @@
     left: 0;
 }
 
-.sideBarContent > h1, p {
+.todayMenu > h1, p {
     color: #CBCBCB;
     font-family: Helvetica, Sans-Serif;
     margin-left: 25px;
 }
 
-.sideBarContent > h1 {
+.todayMenu > h1 {
     font-size: 50px;
 }
 
-.sideBarContent > p {
+.todayMenu > p {
     font-size: 50px;
 }
 

@@ -1,4 +1,4 @@
-div .sideBar {
+.sideBar {
     background-color: #074F57;
     height: 100%;
     width: 500px;
@@ -6,4 +6,46 @@ div .sideBar {
     z-index: 1;
     top: 0;
     left: 0;
+}
+
+.sideBarContent > h1, p {
+    color: #CBCBCB;
+    font-family: Helvetica, Sans-Serif;
+    margin-left: 25px;
+}
+
+.sideBarContent > h1 {
+    font-size: 50px;
+}
+
+.sideBarContent > p {
+    font-size: 50px;
+}
+
+.toolBar {
+    margin: 25px;
+}
+
+div .toolBar input {
+    background-color: #08656F;
+    border: none;
+    border-radius: 15px;
+    color: #CBCBCB;
+    height: 69px;
+    width: 366px;
+    font-size: 30px;
+}
+
+.createButton {
+    background-color: #08656F;
+    border: none;
+    border-radius: 15px;
+    height: 69px;
+    width: 69px;
+    float: right;
+}
+
+.createIcon {
+    height: 40px;
+    width: 40px;
 }

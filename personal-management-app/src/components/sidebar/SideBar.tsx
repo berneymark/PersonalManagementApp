@@ -1,10 +1,17 @@
 import React, {Component} from 'react';
-import '../css/SideBar.css';
+import ToolBar from './ToolBar';
+import '../../css/SideBar.css';
 
 class SideBar extends Component {
     render() {
         return(
-            <div className="sideBar"></div>
+            <div className="sideBar">
+                <ToolBar/>
+                <div className="sideBarContent">
+                    <h1>today</h1>
+                    <h1>projects</h1>
+                </div>
+            </div>
         );
     }
 }

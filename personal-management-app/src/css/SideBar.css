@@ -8,25 +8,11 @@
     left: 0;
 }
 
-.todayMenu > h1, p {
-    color: #CBCBCB;
-    font-family: Helvetica, Sans-Serif;
-    margin-left: 25px;
-}
-
-.todayMenu > h1 {
-    font-size: 50px;
-}
-
-.todayMenu > p {
-    font-size: 50px;
-}
-
 .toolBar {
     margin: 25px;
 }
 
-div .toolBar input {
+.toolBar input {
     background-color: #08656F;
     border: none;
     border-radius: 15px;
@@ -48,4 +34,32 @@ div .toolBar input {
 .createIcon {
     height: 40px;
     width: 40px;
+}
+
+.todayMenu > h1, p {
+    color: #CBCBCB;
+    font-family: Helvetica, Sans-Serif;
+    margin-left: 25px;
+}
+
+.todayMenu > h1 {
+    font-size: 50px;
+}
+
+.todayMenu > p {
+    font-size: 50px;
+}
+
+.projectsMenu > h1, p {
+    color: #CBCBCB;
+    font-family: Helvetica, Sans-Serif;
+    margin-left: 25px;
+}
+
+.projectsMenu > h1 {
+    font-size: 50px;
+}
+
+.projectsMenu > p {
+    font-size: 50px;
 }

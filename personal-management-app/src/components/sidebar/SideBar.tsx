@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import ToolBar from './ToolBar';
 import TodayMenu from './TodayMenu';
+import ProjectsMenu from './ProjectsMenu';
 import '../../css/SideBar.css';
 
 class SideBar extends Component {
@@ -10,7 +11,7 @@ class SideBar extends Component {
                 <ToolBar/>
                 <div className="sideBarContent">
                     <TodayMenu/>
-                    <h1>projects</h1>
+                    <ProjectsMenu/>
                 </div>
             </div>
         );

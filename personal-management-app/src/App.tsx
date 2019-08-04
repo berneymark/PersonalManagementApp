@@ -3,20 +3,18 @@ import './App.css';
 
 const App: React.FC = () => {
   return (
-    <div className="main-container">
-      <header className="header">
-        <h1>Notes</h1>
-        <input 
-          className="searchBar"
-          type="text"
-          value="Search"/>
-      </header>
-      <div className="buttons">
-        <h2>All</h2>
-        <h2>Pinned</h2>
-        <h2>Collections</h2>
+    <div className="parentContainer">
+      <div className="sideBar">
+        <div className="toolBar">
+          <div className="searchBar"></div>
+          <button className="createNoteButton"></button>
+        </div>
+        <div className="sideBarContent">
+          <div className="todayMenu"></div>
+          <div className="projectMenu"></div>
+        </div>
       </div>
-      <div className="notes">
+      <div className="notesView">
 
       </div>
     </div>

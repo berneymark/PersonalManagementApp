@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ToolBar from './ToolBar';
+import TodayMenu from './TodayMenu';
 import '../../css/SideBar.css';
 
 class SideBar extends Component {

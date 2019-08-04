@@ -1,4 +1,5 @@
 import React from 'react';
+import SideBar from '../src/components/SideBar';
 import './App.css';
 
 const App: React.FC = () => {

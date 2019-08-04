@@ -7,7 +7,7 @@ class NoteList extends Component {
             <div className="noteList">
 
             </div>
-        )
+        );
     }
 }
 

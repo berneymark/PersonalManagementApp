@@ -9,7 +9,7 @@ class SideBar extends Component {
             <div className="sideBar">
                 <ToolBar/>
                 <div className="sideBarContent">
-                    <h1>today</h1>
+                    <TodayMenu/>
                     <h1>projects</h1>
                 </div>
             </div>

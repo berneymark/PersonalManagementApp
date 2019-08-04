@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Project from './Project';
 import '../../css/SideBar.css';
 
 class ProjectsMenu extends Component {

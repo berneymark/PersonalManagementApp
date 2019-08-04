@@ -1,11 +1,15 @@
 import React, {Component} from 'react';
 import '../../css/SideBar.css';
 
-class Project extends Component {
+interface Props {
+    projectName: string;
+}
+
+class Project extends Component<Props> {
     render() {
         return(
-            <div>
-
+            <div className="project">
+                <p>{this.props.projectName}</p>
             </div>
         );
     }

@@ -9,11 +9,11 @@ interface Props {
 class Project extends Component<Props> {
     render() {
         return( 
-            <a href={ this.props.projectLink }>
-                <p className="project">
+            <button className="projectButton">
+                <p className="projectName">
                     { this.props.projectName }
                 </p>
-            </a> 
+            </button> 
         );
     }
 }

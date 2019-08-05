@@ -34,7 +34,7 @@ class ProjectsMenu extends Component<{}, States> {
                 </div>
                 <div className="projectList">
                     {this.state.projects.map(item => (
-                        <Project key={item} projectName={item}/>
+                        <Project key={ item } projectName={ item }/>
                     ))}
                 </div>
             </div>

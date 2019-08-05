@@ -6,15 +6,7 @@ const App: React.FC = () => {
   return (
     <div className="parentContainer">
       <div className="sideBar">
-        <SideBar/>s
-        {/*<div className="toolBar">
-          <div className="searchBar"></div>
-          <button className="createNoteButton"></button>
-        </div>
-        <div className="sideBarContent">
-          <div className="todayMenu"></div>
-          <div className="projectMenu"></div>
-        </div>*/}
+        <SideBar/>
       </div>
       <div className="notesView">
 

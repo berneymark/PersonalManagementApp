@@ -70,3 +70,19 @@
     float: right;
     margin-right: 25px;
 }
+
+/*.projectList {
+    height: 515px;
+    margin: 0;
+    overflow-y: scroll;
+}*/
+
+.project {    
+    color: #CBCBCB;
+    font-family: Helvetica, Sans-Serif;
+    font-size: 30px;
+    font-weight: lighter;
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}

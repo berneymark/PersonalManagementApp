@@ -12,7 +12,8 @@ class ToolBar extends Component {
                 <button className="createButton">
                     <img 
                         src={ CreateIcon }
-                        alt="create" />
+                        alt="create"
+                        className="createIcon"/>
                 </button>
             </div>
         );

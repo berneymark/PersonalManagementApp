@@ -14,20 +14,20 @@
 
 .toolBar input {
     background-color: #08656F;
-    border: none;
+    border: none; 
     border-radius: 15px;
     color: #CBCBCB;
-    height: 69px;
-    width: 366px;
     font-size: 30px;
+    height: 70px;
+    width: 366px;
 }
 
 .createButton {
     background-color: #08656F;
     border: none;
     border-radius: 15px;
-    height: 69px;
-    width: 69px;
+    height: 70px;
+    width: 70px;
     float: right;
 }
 
@@ -36,42 +36,36 @@
     width: 40px;
 }
 
-.todayMenu > h1, p {
-    color: #CBCBCB;
-    font-family: Helvetica, Sans-Serif;
-    margin-left: 25px;
-}
-
 .todayMenu > h1 {
-    font-size: 50px;
-}
-
-.todayMenu > p {
-    font-size: 50px;
-}
-
-.projectsMenu > h1, p {
     color: #CBCBCB;
     font-family: Helvetica, Sans-Serif;
+    font-size: 50px;
     margin-left: 25px;
 }
 
-.projectsMenu > h1 {
-    font-size: 50px;
-    float: left;
+.projectsToolbar {
+    height: 70px;
 }
 
-.projectsMenu > .addProject {
+.projectsToolbar > h1 {
+    color: #CBCBCB;
+    font-family: Helvetica, Sans-Serif;
+    font-size: 50px;
+    font-weight: lighter;
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    float: left;
+    vertical-align: middle;
+}
+
+.projectsToolbar > button {
     background-color: #08656F;
     border: none;
     border-radius: 15px;
     font-size: 50px;
-    height: 69px;
-    width: 69px;
+    height: 70px;
+    width: 70px;
     float: right;
     margin-right: 25px;
-}
-
-.projectsMenu > p {
-    font-size: 50px;
 }

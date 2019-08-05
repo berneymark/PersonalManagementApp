@@ -7,11 +7,7 @@ interface Props {
 
 class Project extends Component<Props> {
     render() {
-        return(
-            <div className="project">
-                <p>{this.props.projectName}</p>
-            </div>
-        );
+        return( <p className="project">{this.props.projectName}</p> );
     }
 }
 

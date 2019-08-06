@@ -6,7 +6,7 @@ interface Props {
     projectLink?: string;
 }
 
-class Project extends Component<Props> {
+class Project extends Component<Props, {}> {
     render() {
         return( 
             <button className="projectButton">

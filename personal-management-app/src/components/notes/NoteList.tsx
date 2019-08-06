@@ -1,7 +1,11 @@
 import React, {Component} from 'react';
 import Note from './Note';
 
-class NoteList extends Component {
+interface Props {
+    projectGroup: string
+}
+
+class NoteList extends Component<Props, {}> {
     render() {
         return(
             <div className="noteList">

@@ -71,11 +71,12 @@
     margin-right: 25px;
 }
 
-/*.projectList {
-    height: 515px;
-    margin: 0;
-    overflow-y: scroll;
-}*/
+.projectButton {
+    display: block;
+    float: left;
+    height: 40px;
+    width: 500px;
+}
 
 .projectName {    
     color: #CBCBCB;
@@ -85,4 +86,5 @@
     margin-top: 10px;
     margin-left: 25px;
     margin-bottom: 10px;
+    text-align: start;
 }

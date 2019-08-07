@@ -72,6 +72,8 @@
 }
 
 .projectButton {
+    background-color: #074F57;
+    border: none;
     display: block;
     float: left;
     height: 40px;

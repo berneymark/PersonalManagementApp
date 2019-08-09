@@ -1,40 +1,64 @@
-import React, {Component} from 'react';
+import React, {Component, createRef} from 'react';
 import Project from './Project';
 import '../../css/SideBar.css';
 
 interface States {
-    projects: string[];
+    projectNames: string[];
+    projectKeys: number[];
 }
 
 class ProjectsMenu extends Component<{}, States> {
+    private projectRef = createRef<Project>();
+    private pListRef = createRef<HTMLDivElement>();
+
     constructor(p: {}) {
         super(p);
 
         this.state = {
-            projects: []
+            projectNames: [],
+            projectKeys: []
         }
     }
 
-    addProject = (event: any) => {
-        let newProject = prompt("Input your project?");
-        console.log(newProject);
+    addProjectButton = (event: any) => {
+        let newProjectName = prompt("Input your project?");
+        let currentKeys = this.state.projectKeys;
 
-        if (newProject != null) {
-            let newProjectList = this.state.projects.concat(newProject);
-            this.setState({projects: newProjectList});
+        if (newProjectName != null) {
+            if (this.state.projectNames != null)
+                this.selectProjectButton(null);
+            let newProjectList = this.state.projectNames.concat(newProjectName);
+            this.setState({
+                projectNames: newProjectList
+            });
         } else alert("That project can't be added");
     }
 
+    addProjectComponent = () => {
+        
+    }
+
+    selectProjectButton = (event: any) => {
+        var projectList = document.getElementsByClassName("projectList");
+    }
+
     render() {
+        var count = 0;
+
         return(
             <div className="projectsMenu">
                 <div className="projectsToolbar">
                     <h1>projects</h1>
-                    <button onClick={ e => this.addProject(e) }>+</button>
+                    <button onClick={ e => this.addProjectButton(e) }>+</button>
                 </div>
-                <div className="projectList">
-                    {this.state.projects.map(item => (
-                        <Project key={ item } projectName={ item }/>
+                <div 
+                    className="projectList"
+                    ref={ this.pListRef }>
+                    {this.state.projectNames.map(item => (
+                        <Project 
+                            ref={ this.projectRef }
+                            key={ count++ } 
+                            projectName={ item }/>
                     ))}
                 </div>
             </div>

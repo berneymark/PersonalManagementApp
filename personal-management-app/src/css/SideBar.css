@@ -80,6 +80,11 @@
     width: 500px;
 }
 
+.projectButton.active {
+    color: #333;
+    background-color:red;
+}
+
 .projectName {    
     color: #CBCBCB;
     font-family: Helvetica, Sans-Serif;

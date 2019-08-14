@@ -1,6 +1,11 @@
 import React, {Component} from 'react';
 
-class CreateNoteForm extends Component {
+interface States {
+    noteName: string;
+    noteContent: string;
+}
+
+class CreateNoteForm extends Component<{}, States> {
     render() {
         return(
             <div className="createNoteContainer">

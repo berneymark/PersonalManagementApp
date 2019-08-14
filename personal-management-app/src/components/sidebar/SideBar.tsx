@@ -4,11 +4,15 @@ import TodayMenu from './TodayMenu';
 import ProjectsMenu from './ProjectsMenu';
 import '../../css/SideBar.css';
 
-class SideBar extends Component {
+interface Props {
+    createNoteFunction?: any
+}
+
+class SideBar extends Component<Props> {
     render() {
         return(
             <div className="sideBar">
-                <ToolBar/>
+                <ToolBar createNoteFunction={ this.props.createNoteFunction }/>
                 <div className="sideBarContent">
                     <TodayMenu/>
                     <ProjectsMenu/>

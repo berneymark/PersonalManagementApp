@@ -18,6 +18,12 @@ class CreateNoteForm extends Component<{}, States> {
                         type="text"
                         name="noteTitle"
                         placeholder="note title"></input>
+                    <select name="projectSelector">
+                        <option>University</option>
+                        <option>Work</option>
+                        <option>Personal</option>
+                        <option>Urgent</option>
+                    </select>
                     <button
                         type="submit"
                         name="noteSubmit">

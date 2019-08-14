@@ -54,12 +54,12 @@ class ProjectsMenu extends Component<{}, States> {
                 <div 
                     className="projectList"
                     ref={ this.pListRef }>
-                    {this.state.projectNames.map(item => (
+                    { this.state.projectNames.map(item => (
                         <Project 
                             ref={ this.projectRef }
                             key={ count++ } 
                             projectName={ item }/>
-                    ))}
+                    )) }
                 </div>
             </div>
         );

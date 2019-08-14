@@ -9,10 +9,14 @@ interface Props {
 }
 
 class SideBar extends Component<Props> {
+    sendCreateBool:any = (visible: boolean) => {
+        this.props.createNoteFunction(visible)
+    }
+
     render() {
         return(
             <div className="sideBar">
-                <ToolBar createNoteFunction={ this.props.createNoteFunction }/>
+                <ToolBar createNoteFunction={ this.sendCreateBool }/>
                 <div className="sideBarContent">
                     <TodayMenu/>
                     <ProjectsMenu/>

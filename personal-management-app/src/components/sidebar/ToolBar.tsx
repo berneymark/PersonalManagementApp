@@ -6,9 +6,10 @@ interface Props {
     createNoteFunction?: any
 }
 
-class ToolBar extends Component<Props> {
-    onClick = () => {
-        alert("is this button working?");
+class ToolBar extends Component<Props, {}> {
+
+    sendCreateBool:any = (visible: boolean) => {
+        this.props.createNoteFunction(visible)
     }
 
     render() {
@@ -19,7 +20,7 @@ class ToolBar extends Component<Props> {
                     placeholder="search notes"/>
                 <button 
                     className="createButton"
-                    onClick={ this.props.createNoteFunction }>
+                    onClick={ () => this.sendCreateBool(true) }>
                     <img 
                         src={ CreateIcon }
                         alt="create"

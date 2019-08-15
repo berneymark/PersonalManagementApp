@@ -6,14 +6,14 @@ interface States {
 }
 
 class CreateNoteForm extends Component<{}, States> {
-    handleSubmit = () => {
+    submitNote = () => {
         
     }
 
     render() {
         return(
             <div className="createNoteContainer">
-                <form onSubmit={ this.handleSubmit }>
+                <form onSubmit={ this.submitNote }>
                     <input 
                         type="text"
                         name="noteTitle"
